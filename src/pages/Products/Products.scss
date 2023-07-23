@@ -1,0 +1,103 @@
+.products {
+  padding: 30px 50px;
+  display: flex;
+
+  .left {
+    flex: 1;
+    position: sticky;
+    height: 100%;
+    top: 50px;
+
+    .filterItem {
+      margin-bottom: 30px;
+
+      h2 {
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .inputItem {
+        margin-bottom: 10px;
+
+        // Define variables for easy customization
+        $range-track-color: #ddd;
+        $range-thumb-color: #0e5eff;
+        $range-thumb-active-color: #44aaff;
+        $range-gradient-start: #75a7ff;
+        $range-gradient-end: #0d76ff;
+
+        // Input range styles
+        input[type='range'] {
+          -webkit-appearance: none;
+          width: 200px;
+          height: 8px;
+          margin: 10px 0;
+          background-color: transparent; // Set the track background to transparent
+
+          // Track styles
+          &::-webkit-slider-runnable-track {
+            height: 8px;
+            border-radius: 5px;
+            background: linear-gradient(to right, $range-gradient-start, $range-gradient-end);
+            transition: background 0.3s ease; // Add a smooth transition for the gradient
+          }
+
+          // Thumb styles
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $range-thumb-color;
+            border: 2px solid #fff;
+            margin-top: -7px;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); // Add a shadow effect to the thumb
+
+            // Add a smooth transition for the background color
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          // Hover styles
+          &:hover {
+            &::-webkit-slider-runnable-track {
+              background: linear-gradient(to right, darken($range-gradient-start, 10%), darken($range-gradient-end, 10%));
+            }
+
+            &::-webkit-slider-thumb {
+              background-color: lighten($range-thumb-color, 10%);
+            }
+          }
+
+          // Active styles (when user clicks and drags the thumb)
+          &:active::-webkit-slider-thumb {
+            background-color: $range-thumb-active-color;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+          }
+        }
+
+
+
+
+        label {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 3;
+
+    .catImg {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 50px;
+    }
+  }
+}
