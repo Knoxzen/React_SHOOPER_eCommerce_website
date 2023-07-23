@@ -1,4 +1,4 @@
-# E-Commerce Website
+# SHOPPER E-Commerce Website
 
 This is a simple e-commerce website built using React and React Router. The website allows users to browse and view products, add them to their cart, and proceed to checkout. It also includes a responsive navbar and footer for easy navigation.
 
