@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "img1": "../../data/wd1-1.jpeg",
+        "img2": "../../data/wd1-2.jpeg",
+        "title": "Pink coat",
+        "isNew": true,
+        "oldPrice": 1500,
+        "price": 1099
+    },
+    {
+        "id": 2,
+        "img1": "../../data/wd2-1.jpeg",
+        "img2": "../../data/wd2-2.jpeg",
+        "title": "Black dress",
+        "isNew": true,
+        "oldPrice": 2000,
+        "price": 1200
+    },
+    {
+        "id": 3,
+        "img1": "../../data/wd3-1.jpeg",
+        "img2": "../../data/wd3-2.jpeg",
+        "title": "Blue jeans",
+        "isNew": false,
+        "oldPrice": 1000,
+        "price": 500
+    },
+    {
+        "id": 4,
+        "img1": "../../data/wd4-1.jpeg",
+        "img2": "../../data/wd4-2.jpeg",
+        "title": "White shirt",
+        "isNew": true,
+        "oldPrice": 1500,
+        "price": 1000
+    }
+]
